@@ -714,6 +714,44 @@ footer p{
     }
 
 }
+/* GALLERY */
+
+.gallery{
+    background:#f5f9ff;
+    padding:70px 0;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.gallery-item{
+    overflow:hidden;
+    border-radius:18px;
+    background:#ffffff;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.gallery-item img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    display:block;
+}
+
+@media(max-width:800px){
+
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-item img{
+        height:260px;
+    }
+
+}
 </style>
 </head>
 
@@ -1072,7 +1110,39 @@ Book an Appointment
 </section>
 
 </section>
+<!-- GALLERY -->
 
+<section class="gallery">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Our Clinic</h2>
+
+<p>A look inside Mudoi Dental Clinic, Nagaon</p>
+
+</div>
+
+<div class="gallery-grid">
+
+<div class="gallery-item">
+<img src="treatment-room.jpeg" alt="Treatment room at Mudoi Dental Clinic Nagaon">
+</div>
+
+<div class="gallery-item">
+<img src="dental-treatment-1.jpeg" alt="Dental treatment at Mudoi Dental Clinic Nagaon">
+</div>
+
+<div class="gallery-item">
+<img src="dental-treatment-2.jpeg" alt="Dental care at Mudoi Dental Clinic Nagaon">
+</div>
+
+</div>
+
+</div>
+
+</section>
 <!-- REVIEWS -->
 
 <section class="reviews">
