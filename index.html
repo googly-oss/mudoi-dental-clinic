@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mudoi Dental Clinic | Professional Dental Care in Nagaon</title>
+
+<meta name="description" content="Mudoi Dental Clinic, Nagaon — professional, comfortable and personalized dental care with 15+ years of experience.">
+
+<style>
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  color:#17202a;
+  background:#ffffff;
+  line-height:1.6;
+}
+
+a{
+  text-decoration:none;
+}
+
+.container{
+  width:min(1120px,92%);
+  margin:auto;
+}
+
+/* HEADER */
+
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:white;
+  box-shadow:0 2px 15px rgba(0,0,0,.08);
+}
+
+.nav{
+  min-height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  color:#111;
+  font-weight:700;
+  font-size:19px;
+}
+
+.brand img{
+  width:48px;
+  height:48px;
+  object-fit:contain;
+  border-radius:50%;
+}
+
+nav{
+  display:flex;
+  gap:25px;
+}
+
+nav a{
+  color:#333;
+  font-size:15px;
+  font-weight:600;
+}
+
+nav a:hover{
+  color:#0879d1;
+}
+
+/* HERO */
+
+.hero{
+  background:
+  linear-gradient(90deg,rgba(0,0,0,.88),rgba(0,0,0,.58)),
+  url("hero.jpg") center/cover;
+  color:white;
+  min-height:620px;
+  display:flex;
+  align-items:center;
+}
+
+.hero-content{
+  max-width:760px;
+  padding:70px 0;
+}
+
+.hero-logo{
+  width:190px;
+  height:190px;
+  object-fit:contain;
+  margin-bottom:25px;
+  border-radius:50%;
+}
+
+.badge{
+  display:inline-block;
+  background:#0879d1;
+  padding:7px 15px;
+  border-radius:30px;
+  font-size:14px;
+  font-weight:bold;
+  margin-bottom:18px;
+}
+
+.hero h1{
+  font-size:clamp(42px,6vw,72px);
+  line-height:1.02;
+  margin-bottom:18px;
+}
+
+.hero h1 span{
+  color:#0879d1;
+}
+
+.hero p{
+  font-size:20px;
+  max-width:650px;
+  color:#e8e8e8;
+  margin-bottom:30px;
+}
+
+.buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.btn{
+  padding:14px 22px;
+  border-radius:7px;
+  font-weight:bold;
+  display:inline-block;
+  transition:.2s;
+}
+
+.btn-primary{
+  background:#0879d1;
+  color:white;
+}
+
+.btn-primary:hover{
+  background:#0563ad;
+}
+
+.btn-outline{
+  border:2px solid white;
+  color:white;
+}
+
+.btn-outline:hover{
+  background:white;
+  color:#111;
+}
+
+/* TRUST BAR */
+
+.trust{
+  background:#fff;
+  box-shadow:0 5px 25px rgba(0,0,0,.08);
+}
+
+.trust-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+}
+
+.trust-item{
+  padding:25px 15px;
+  text-align:center;
+  border-right:1px solid #eee;
+}
+
+.trust-item:last-child{
+  border-right:0;
+}
+
+.trust-icon{
+  font-size:30px;
+  color:#0879d1;
+  margin-bottom:5px;
+}
+
+.trust-item strong{
+  display:block;
+  font-size:15px;
+}
+
+.trust-item small{
+  color:#666;
+}
+
+/* SECTIONS */
+
+section{
+  padding:85px 0;
+}
+
+.section-title{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.section-title .small{
+  color:#0879d1;
+  font-weight:bold;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:13px;
+}
+
+.section-title h2{
+  font-size:40px;
+  margin:8px 0;
+}
+
+.section-title p{
+  color:#666;
+  max-width:650px;
+  margin:auto;
+}
+
+/* ABOUT */
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+}
+
+.about-image{
+  min-height:420px;
+  border-radius:18px;
+  background:url("clinic.jpg") center/cover;
+}
+
+.about h2{
+  font-size:40px;
+  margin-bottom:18px;
+}
+
+.about p{
+  color:#666;
+  margin-bottom:18px;
+}
+
+.check{
+  margin:12px 0;
+  font-weight:600;
+}
+
+.check span{
+  color:#0879d1;
+  margin-right:8px;
+}
+
+/* SERVICES */
+
+.services{
+  background:#f5f9fc;
+}
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.service{
+  background:white;
+  padding:30px;
+  border-radius:14px;
+  border:1px solid #e8edf1;
+  transition:.25s;
+}
+
+.service:hover{
+  transform:translateY(-5px);
+  box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.service-icon{
+  font-size:35px;
+  margin-bottom:12px;
+}
+
+.service h3{
+  margin-bottom:7px;
+}
+
+.service p{
+  color:#666;
+  font-size:14px;
+}
+
+/* DOCTOR */
+
+.doctor-grid{
+  display:grid;
+  grid-template-columns:380px 1fr;
+  gap:55px;
+  align-items:center;
+}
+
+.doctor-photo{
+  min-height:430px;
+  background:url("doctor.jpg") center/cover;
+  border-radius:18px;
+}
+
+.doctor h2{
+  font-size:38px;
+}
+
+.doctor .qualification{
+  color:#0879d1;
+  font-weight:bold;
+  margin:5px 0 20px;
+}
+
+.doctor p{
+  color:#666;
+  margin-bottom:20px;
+}
+
+/* WHY US */
+
+.why{
+  background:#071923;
+  color:white;
+}
+
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.why-card{
+  text-align:center;
+  padding:25px;
+}
+
+.why-card .icon{
+  font-size:38px;
+  margin-bottom:12px;
+}
+
+.why-card p{
+  color:#bfcbd0;
+  font-size:14px;
+}
+
+/* GALLERY */
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:15px;
+}
+
+.gallery img{
+  width:100%;
+  height:240px;
+  object-fit:cover;
+  border-radius:12px;
+}
+
+/* LOCATION */
+
+.contact{
+  background:#f5f9fc;
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+}
+
+.contact-card{
+  background:white;
+  padding:35px;
+  border-radius:16px;
+}
+
+.contact-card h3{
+  margin-bottom:20px;
+}
+
+.contact-row{
+  display:flex;
+  gap:15px;
+  margin:18px 0;
+}
+
+.contact-row strong{
+  display:block;
+}
+
+.contact-row span{
+  color:#666;
+}
+
+.map{
+  width:100%;
+  min-height:350px;
+  border:0;
+  border-radius:16px;
+}
+
+/* FOOTER */
+
+footer{
+  background:#071923;
+  color:white;
+  padding:45px 0;
+  text-align:center;
+}
+
+footer p{
+  color:#bfcbd0;
+  margin-top:8px;
+}
+
+/* FLOATING BUTTONS */
+
+.floating{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  z-index:999;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.float-btn{
+  width:52px;
+  height:52px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-size:22px;
+  box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.whatsapp{
+  background:#25D366;
+}
+
+.call{
+  background:#0879d1;
+}
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+  .nav{
+    min-height:64px;
+  }
+
+  nav{
+    display:none;
+  }
+
+  .hero{
+    min-height:650px;
+  }
+
+  .hero-content{
+    padding:50px 0;
+    text-align:center;
+  }
+
+  .hero-logo{
+    width:150px;
+    height:150px;
+  }
+
+  .hero h1{
+    font-size:43px;
+  }
+
+  .hero p{
+    font-size:17px;
+  }
+
+  .buttons{
+    justify-content:center;
+  }
+
+  .trust-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .trust-item{
+    border-bottom:1px solid #eee;
+  }
+
+  section{
+    padding:60px 0;
+  }
+
+  .section-title h2{
+    font-size:32px;
+  }
+
+  .about-grid,
+  .doctor-grid,
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+
+  .service-grid{
+    grid-template-columns:1fr;
+  }
+
+  .why-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .gallery{
+    grid-template-columns:1fr;
+  }
+
+  .gallery img{
+    height:250px;
+  }
+
+  .about-image,
+  .doctor-photo{
+    min-height:300px;
+  }
+}
+
+@media(max-width:480px){
+
+  .hero{
+    min-height:690px;
+  }
+
+  .hero-logo{
+    width:135px;
+    height:135px;
+  }
+
+  .hero h1{
+    font-size:38px;
+  }
+
+  .trust-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .trust-item{
+    padding:20px 8px;
+  }
+
+  .why-grid{
+    grid-template-columns:1fr;
+  }
+
+  .btn{
+    width:100%;
+    text-align:center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+
+    <a href="#" class="brand">
+      <img src="logo.png" alt="Mudoi Dental Clinic Logo">
+      <span>Mudoi Dental Clinic</span>
+    </a>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#doctor">Dentist</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="container hero-content">
+
+    <img src="logo.png"
+         class="hero-logo"
+         alt="Mudoi Dental Clinic Nagaon">
+
+    <div class="badge">15+ YEARS OF EXPERIENCE</div>
+
+    <h1>
+      Professional Dental Care
+      <span>in Nagaon</span>
+    </h1>
+
+    <p>
+      Modern, comfortable and personalized dental care
+      for you and your family.
+    </p>
+
+    <div class="buttons">
+      <a href="#contact" class="btn btn-primary">
+        Book an Appointment
+      </a>
+
+      <a href="https://wa.me/918876258443"
+         class="btn btn-outline"
+         target="_blank">
+        WhatsApp Us
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- TRUST -->
+
+<div class="trust">
+
+  <div class="container trust-grid">
+
+    <div class="trust-item">
+      <div class="trust-icon">✓</div>
+      <strong>Experienced</strong>
+      <small>15+ years of dental expertise</small>
+    </div>
+
+    <div class="trust-item">
+      <div class="trust-icon">♡</div>
+      <strong>Patient Focused</strong>
+      <small>Personalized care for every patient</small>
+    </div>
+
+    <div class="trust-item">
+      <div class="trust-icon">🦷</div>
+      <strong>Modern Treatment</strong>
+      <small>Advanced technology & equipment</small>
+    </div>
+
+    <div class="trust-item">
+      <div class="trust-icon">✓</div>
+      <strong>Safe & Hygienic</strong>
+      <small>Clean & comfortable environment</small>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- ABOUT -->
+
+<section id="about" class="about">
+
+  <div class="container about-grid">
+
+    <div class="about-image"></div>
+
+    <div>
+
+      <div class="section-title" style="text-align:left;margin-bottom:20px;">
+        <div class="small">ABOUT THE CLINIC</div>
+        <h2>Modern Dental Care With A Personal Touch</h2>
+      </div>
+
+      <p>
+        Welcome to Mudoi Dental Clinic, Nagaon.
+        We provide modern, comfortable and personalized
+        dental care for you and your family.
+      </p>
+
+      <p>
+        With 15+ years of experience in dental care and
+        services, our focus is on accurate diagnosis,
+        quality treatment, patient comfort and long-term
+        oral health.
+      </p>
+
+      <div class="check">
+        <span>✓</span> Experienced dental care
+      </div>
+
+      <div class="check">
+        <span>✓</span> Modern treatment technology
+      </div>
+
+      <div class="check">
+        <span>✓</span> Patient-focused treatment
+      </div>
+
+      <div class="check">
+        <span>✓</span> Safe and hygienic environment
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="services" class="services">
+
+  <div class="container">
+
+    <div class="section-title">
+      <div class="small">OUR SERVICES</div>
+      <h2>Complete Dental Care</h2>
+      <p>
+        Comprehensive dental treatments under one roof,
+        with a focus on comfort, safety and quality.
+      </p>
+    </div>
+
+    <div class="service-grid">
+
+      <div class="service">
+        <div class="service-icon">🦷</div>
+        <h3>Dental Cleaning</h3>
+        <p>Professional cleaning and preventive dental care.</p>
+      </div>
+
+      <div class="service">
+        <div class="service-icon">✨</div>
+        <h3>Teeth Whitening</h3>
+        <p>Brighten your smile with professional whitening.</p>
+      </div>
+
+      <div class="service">
+        <div class="service-icon">🦷</div>
+        <h3>Root Canal Treatment</h3>
+        <p>Comfort-focused treatment for infected teeth.</p>
+      </div>
+
+      <div class="service">
+        <div class="service-icon">😁</div>
+        <h3>Braces & Aligners</h3>
+        <p>Solutions for straighter and healthier smiles.</p>
+      </div>
+
+      <div class="service">
+        <div class="service-icon">◆</div>
+        <h3>Dental Implants</h3>
+        <p>Reliable solutions for missing teeth.</p>
+      </div>
+
+      <div class="service">
+        <div class="service-icon">✦</div>
+        <h3>Crowns & Bridges</h3>
+        <p>Restore the function and appearance of your teeth.</p>
+      </div>
+
+      <div class="service">
+        <div class="service-icon">+</div>
+        <h3>Tooth Extraction</h3>
+        <p>Professional and careful tooth removal.</p>
+      </div>
+
+      <div class="service">
+        <div class="service-icon">★</div>
+        <h3>Smile Makeovers</h3>
+        <p>Personalized cosmetic dental solutions.</p>
+      </div>
+
+      <div class="service">
+        <div class="service-icon">✚</div>
+        <h3>Dental Surgery</h3>
+        <p>Specialized dental surgical procedures.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- DOCTOR -->
+
+<section id="doctor" class="doctor">
+
+  <div class="container doctor-grid">
+
+    <div class="doctor-photo"></div>
+
+    <div>
+
+      <div class="small" style="color:#0879d1;font-weight:bold;">
+        MEET OUR DENTIST
+      </div>
+
+      <h2>Dr. Neelam Mudoi</h2>
+
+      <div class="qualification">
+        BDS, MHA, PG
+      </div>
+
+      <p>
+        Dr. Neelam Mudoi is dedicated to providing
+        personalized dental care with a focus on
+        patient comfort, safety and quality treatment.
+      </p>
+
+      <p>
+        With 15+ years of experience in dental care,
+        the clinic strives to create a comfortable
+        experience while providing careful and effective
+        treatment tailored to individual needs.
+      </p>
+
+      <a href="#contact" class="btn btn-primary">
+        Consult Our Clinic
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- WHY CHOOSE US -->
+
+<section class="why">
+
+  <div class="container">
+
+    <div class="section-title">
+      <div class="small">WHY CHOOSE US</div>
+      <h2>Dental Care You Can Trust</h2>
+      <p style="color:#bfcbd0;">
+        Our priority is your comfort, safety and long-term oral health.
+      </p>
+    </div>
+
+    <div class="why-grid">
+
+      <div class="why-card">
+        <div class="icon">15+</div>
+        <h3>Years Experience</h3>
+        <p>More than 15 years of dental care experience.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="icon">🦷</div>
+        <h3>Modern Technology</h3>
+        <p>Modern equipment and treatment approaches.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="icon">♡</div>
+        <h3>Patient Comfort</h3>
+        <p>Personalized care designed around every patient.</p>
+      </div>
+
+      <div class="why-card">
+        <div class="icon">✓</div>
+        <h3>Hygienic Environment</h3>
+        <p>Safe, clean and comfortable dental care.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+  <div class="container">
+
+    <div class="section-title">
+      <div class="small">OUR CLINIC</div>
+      <h2>Clinic Gallery</h2>
+      <p>
+        Add photographs of the clinic, equipment,
+        treatment rooms and team here.
+      </p>
+    </div>
+
+    <div class="gallery">
+
+      <img src="gallery1.jpg" alt="Mudoi Dental Clinic">
+      <img src="gallery2.jpg" alt="Mudoi Dental Clinic">
+      <img src="gallery3.jpg" alt="Mudoi Dental Clinic">
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact" class="contact">
+
+  <div class="container">
+
+    <div class="section-title">
+      <div class="small">CONTACT US</div>
+      <h2>Book Your Dental Visit</h2>
+      <p>
+        Get in touch with Mudoi Dental Clinic in Nagaon.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+
+      <div class="contact-card">
+
+        <h3>Mudoi Dental Clinic</h3>
+
+        <div class="contact-row">
+          <div>📍</div>
+          <div>
+            <strong>Address</strong>
+            <span>
+              A.T. Road, Khutikatia,<br>
+              Nagaon, Assam - 782002
+            </span>
+          </div>
+        </div>
+
+        <div class="contact-row">
+          <div>📞</div>
+          <div>
+            <strong>Phone</strong>
+            <span>+91 8876258443</span>
+          </div>
+        </div>
+
+        <div class="buttons">
+
+          <a href="tel:+918876258443"
+             class="btn btn-primary">
+            Call Now
+          </a>
+
+          <a href="https://wa.me/918876258443"
+             target="_blank"
+             class="btn"
+             style="background:#25D366;color:white;">
+            WhatsApp
+          </a>
+
+        </div>
+
+      </div>
+
+      <iframe
+        class="map"
+        src="https://www.google.com/maps?q=Mudoi%20Dental%20Clinic%20Nagaon%20Assam&output=embed"
+        loading="lazy">
+      </iframe>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer>
+
+  <div class="container">
+
+    <h3>Mudoi Dental Clinic</h3>
+
+    <p>
+      Professional Dental Care in Nagaon
+    </p>
+
+    <p>
+      © 2026 Mudoi Dental Clinic. All rights reserved.
+    </p>
+
+  </div>
+
+</footer>
+
+<!-- FLOATING CONTACT BUTTONS -->
+
+<div class="floating">
+
+  <a class="float-btn whatsapp"
+     href="https://wa.me/918876258443"
+     target="_blank"
+     aria-label="WhatsApp">
+    W
+  </a>
+
+  <a class="float-btn call"
+     href="tel:+918876258443"
+     aria-label="Call">
+    ☎
+  </a>
+
+</div>
+
+</body>
+</html>
