@@ -382,7 +382,82 @@ footer p{
     margin-top:8px;
 }
 
-/* MOBILE */
+/* REVIEWS */
+
+.reviews{
+    background:#f5f9ff;
+    padding:70px 0;
+}
+
+.review-summary{
+    background:#ffffff;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 40px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.06);
+}
+
+.review-summary h3{
+    font-size:26px;
+    color:#126bc5;
+    margin-bottom:5px;
+}
+
+.review-summary p{
+    color:#667085;
+    margin-bottom:15px;
+}
+
+.rating{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
+    font-size:18px;
+    font-weight:600;
+}
+
+.rating span:first-child{
+    font-size:30px;
+    color:#172033;
+}
+
+.stars,
+.review-stars{
+    color:#f4b400;
+    letter-spacing:3px;
+}
+
+.review-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.review-card{
+    background:#ffffff;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.06);
+}
+
+.review-card h3{
+    margin:12px 0;
+    color:#172033;
+}
+
+.review-card p{
+    color:#667085;
+    line-height:1.8;
+}
+
+.review-stars{
+    font-size:18px;
+}
+    /* MOBILE */
 
 @media(max-width:800px){
 
@@ -460,7 +535,22 @@ footer p{
     .cta h2{
         font-size:30px;
     }
+.review-grid{
+    grid-template-columns:1fr;
+}
 
+.review-summary{
+    padding:25px 18px;
+}
+
+.review-card{
+    padding:25px 20px;
+}
+
+.rating{
+    gap:8px;
+    font-size:16px;
+}
 }
 
 /* SMALL PHONES */
@@ -864,6 +954,84 @@ Book an Appointment
 
 </section>
 
+<!-- REVIEWS -->
+
+<section class="reviews">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>What Our Patients Say</h2>
+
+<p>
+Trusted by patients in Nagaon for professional dental care.
+</p>
+
+</div>
+
+<div class="review-summary">
+
+<h3>Mudoi Dental Clinic</h3>
+
+<p>Khutikatia, Nagaon, Assam - 782002</p>
+
+<div class="rating">
+<span>5.0</span>
+<span class="stars">★★★★★</span>
+<span>23 Google Reviews</span>
+</div>
+
+</div>
+
+
+<div class="review-grid">
+
+
+<div class="review-card">
+
+<div class="review-stars">★★★★★</div>
+
+<h3>DJ Borah</h3>
+
+<p>
+“Dr. Mudoi is the best dentist! He’s very understanding and listens to your concerns. He explained everything to me in a very clear manner. I highly recommend him to anyone looking for a dentist.”
+</p>
+
+</div>
+
+
+<div class="review-card">
+
+<div class="review-stars">★★★★★</div>
+
+<h3>Swagatam Borah</h3>
+
+<p>
+“By far the best dental experience I’ve ever had! Highly recommend.”
+</p>
+
+</div>
+
+
+<div class="review-card">
+
+<div class="review-stars">★★★★★</div>
+
+<h3>Darpana Khaund</h3>
+
+<p>
+“I am very satisfied with the treatment and overall experience.”
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
 
 <!-- CONTACT -->
 
